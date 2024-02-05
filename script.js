@@ -32,7 +32,7 @@ const oblicz = () => {
 		case '-':
 		dzialanie = poprzednie - aktualne
 		break
-		case '×':
+		case 'x':
 		dzialanie = poprzednie * aktualne
 		break
 		case '÷':
