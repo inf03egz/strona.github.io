@@ -52,7 +52,7 @@ const oblicz = () => {
 		case '√':
 		dzialanie = Math.pow(poprzednie, 1 / aktualne)
 		break
-		case: 'log':
+		case 'log':
 		dzialanie = Math.log(poprzednie) / Math.log(aktualne)
 		break
 	  default:
@@ -100,16 +100,6 @@ const zaktualizujWynik = () => {
 	}
 }
 
-const dodajLiczbe = (liczba) => {
-	if(liczba === '•') {
-		if(aktualneDzialanie.includes('.')) {
-			return
-		}
-		liczba = '.'
-	}
-	aktualneDzialanie = aktualneDzialanie.toString() + liczba.toString()
-	
-}
 const usunLiczbe = () => {
 	aktualneDzialanie = aktualneDzialanie.toString().slice(0, -1)
 }
