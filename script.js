@@ -9,7 +9,7 @@ const wynikAktualne = document.querySelector('.aktualne-dzialanie')
 
 var aktualneDzialanie = ''
 var poprzednieDzialanie = ''
-var operacja = underfined
+var operacja = undefined
 
 
 const oblicz = () => {
@@ -59,7 +59,7 @@ const oblicz = () => {
 		return
 	}
 	aktualneDzialanie = dzialanie
-	operacja = underfined
+	operacja = undefined
 	poprzednieDzialanie = ''
 }
 
