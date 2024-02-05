@@ -106,7 +106,7 @@ const usunLiczbe = () => {
 
 const wyczyscWynik = () => {
 	aktualneDzialanie = ''
-	operacja = underfined
+	operacja = undefined
 	poprzednieDzialanie = ''
 }
 
