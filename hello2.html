@@ -192,15 +192,7 @@ font-size:30px;
 font-weight: bold;
 }
 
-#adres {
-font-size:30px;
-font-weight: bold;
-}
 #email {
-font-size:30px;
-font-weight: bold;
-}
-#wiado {
 font-size:30px;
 font-weight: bold;
 }
@@ -266,14 +258,14 @@ font-weight: bold;
     <script src="script2.js"></script>
 	<center><h1 class="formularz">Formularz kontaktowy</h1>
 <div id="send_form_status"></div>
-<form method="post" action="/send_form.php" id="contact_form">
-     <div id="imie"><label for="name">Imię i nazwisko</label></div>
-     <div id="imie"><input type="text" name="name" id="name" class="formField" /></div>
-     <div id="adres"><label for="email">Adres email</label></div>
-     <div id="adres"><input type="text" name="email" id="email" class="formField" /></div>
-     <div id="wiado"><label for="message">Treść wiadomości</label></div>
-     <div id="wiado"><textarea name="message" id="message" class="formField"></textarea></div>
-     <div id="wyslij"><button id="cta-button">Wyślij</button></div>
-</form></center>
+<form action="natalia.gajowiecka2005@interia.pl" method="post" enctype="text/plain">
+    <label for="name" id="imie">Imię:</label><br>
+    <input type="text" id="name" name="Imię" required><br>
+    <label for="email" id="email">E-mail:</label><br>
+    <input type="email" id="email" name="E-mail" required><br>
+    <label for="message" id="message">Wiadomość:</label><br>
+    <textarea id="message" name="Wiadomość" rows="4" cols="50" required></textarea><br>
+    <input type="submit" value="Wyślij" id="wyslij">
+  </form></center>
   </body>
 </html>
