@@ -183,6 +183,56 @@ p.q {
 .section {
 	float: left;
 }
+#imie {
+font-size:30px;
+font-weight: bold;
+}
+#name {
+font-size:30px;
+font-weight: bold;
+}
+#numer {
+font-size:30px;
+font-weight: bold;
+
+}
+#phone {
+font-size:30px;
+font-weight: bold;
+}
+#adres {
+font-size:30px;
+font-weight: bold;
+}
+#email {
+font-size:30px;
+font-weight: bold;
+}
+#wiado {
+font-size:30px;
+font-weight: bold;
+}
+#message {
+font-size:30px;
+font-weight: bold;
+}
+#wyslij {
+font-size:30px;
+font-weight: bold;
+}
+.formularz {
+	color:  #D19275;
+	font-size: 50px;
+}
+#cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #D19275;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
 </style>
 </head>
 <body>
@@ -222,5 +272,18 @@ p.q {
     </div>
 
     <script src="script2.js"></script>
+	<center><h1 class="formularz">Formularz kontaktowy</h1>
+<div id="send_form_status"></div>
+<form method="post" action="/send_form.php" id="contact_form">
+     <div id="imie"><label for="name">Imię i nazwisko</label></div>
+     <div id="imie"><input type="text" name="name" id="name" class="formField" /></div>
+     <div id="numer"><label for="phone">Numer telefonu</label></div>
+     <div id="numer"><input type="text" name="phone" id="phone" class="formField" /></div>
+     <div id="adres"><label for="email">Adres email</label></div>
+     <div id="adres"><input type="text" name="email" id="email" class="formField" /></div>
+     <div id="wiado"><label for="message">Treść wiadomości</label></div>
+     <div id="wiado"><textarea name="message" id="message" class="formField"></textarea></div>
+     <div id="wyslij"><button id="cta-button">Wyślij</button></div>
+</form></center>
   </body>
 </html>
